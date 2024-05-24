@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial;
+}
+
+.sidebar{
+    width: 350px;
+    height: 650px;
+    background-color: #030303;
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    padding: 10px;
+}
+.sidebar-box {
+    background: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.sidebar-box .logo{
+    width: 120px;
+}
+.sidebar-box .logo img{
+    width: 100%;
+}
+.sidebar-box ul{
+    list-style: none;
+
+}
+.sidebar-box ul li {
+    padding: 10px 20px;
+}
+
+
+.sidebar-box ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sidebar-box ul a:hover{
+    text-decoration: underline;
+}
+
+.sidebar-box ul a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+ 
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.create-playlist{
+    background: #393636;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.create-playlist h4{
+    color: white;
+    font-size: 15px;
+}
+
+.create-playlist p{
+    color: white;
+    font-size: 12px;
+    margin: 10px 0px 12px 0px;
+}
+
+
+
+.create-playlist button {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.sidebar-scroll {
+    height: 120px;
+    overflow-y: auto;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: transparent;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #424141;
+}
+
+.privacy ul li a {
+    text-decoration: none;
+    color: rgb(142, 141, 141);
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0 6px;
+}
+
+.privacy ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.privacy ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.privacy ul li {
+    padding: 0px 10px;
+    padding-bottom: 7px;
+}
+
+.lang {
+    padding: 10px 30px;
+}
+.lang button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    margin: 20px 0px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #818080
+}
+
+.lang button:hover {
+    padding: 11px 16px;
+    background-color: 20px white;
+}
+
+.lang button span {
+    padding-right: 5px;
+}
+
+.main-section {
+    margin-left: 350px;
+    background-color: #181818;
+    height: 130vh;
+}
+
+.main-section .top-nav {
+    padding: 15px 30px;
+    background:rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section .top-nav button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+}
+
+.main-section .top-nav .nav-btn button i {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 25px;
+
+}
+
+.top-nav .login-btn .signup {
+    color:#b1acac;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.top-nav .login-btn .signup:hover {
+    color:white;
+}
+
+.top-nav .login-btn .login {
+    color:black;
+    background-color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+
+.top-nav .login-btn .login:hover {
+    padding: 16px 26px;
+    border: 20px white
+}
+
+.spotify-playlist {
+    color: white;
+    padding: 20px 40px;
+
+}
+
+.spotify-playlist .card {   
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.spotify-playlist .card .item {
+    width: 200px;
+    height: 250px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .card .item:hover {
+    background-color: #454444;
+}
+
+
+.spotify-playlist .card .item img {
+    width: 160px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px 0px 5px 0px;
+}
+
+.spotify-playlist .card .item p:hover {
+    text-decoration: underline;
+}
+
+.spotify-playlist .card .item .play-btn i {
+    border-radius: 250px;
+    padding: 15px 18px;
+    background-color: rgb(116, 211, 116);
+    color: black;
+    
+}
+
+.spotify-playlist .card .item .play-btn {
+    position: relative;
+    padding-bottom: 10px;
+} 
+
+.spotify-playlist .play-btn i {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    
+}
+
+.foot .foot_h {
+    
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: flex;
+    overflow: hidden;
+    gap: 80px;
+}
+
+.foot .foot_h a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(142, 141, 141);
+    
+}
+
+.foot .foot_h ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust this value to increase/decrease the gap */
+    padding: 5px 0px;
+}
+
+.foot .foot_h a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.foot .foot_in {
+    text-decoration: none;
+    color: rgb(142, 141, 141);
+}
+
+.foot .foot_h span i {
+    
+    background-color: rgb(59, 59, 59);
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.foot .foot_h span i:hover {
+    background-color: gray;
+}
+
+.bottom-nav {
+    margin-top: 10px ;
+    width: 100%;
+    height: 50px; 
+    background: rgb(218,63,204);
+    background: linear-gradient(90deg, rgba(218,63,204,1) 17%, rgba(92,0,162,1) 52%, rgba(94,152,204,1) 90%);
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px; 
+    font-weight: 600;
+}
+
+.bottom-nav ul {
+    margin-left: 10px;
+}
+
+
+.bottom-nav button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+}
+
+.bottom-nav .login-btn .signup {
+    color:black;
+    background-color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.bottom-nav .login-btn .signup:hover {
+    padding: 16px 26px;
+    border: 20px white
+}
+
